@@ -1,0 +1,26 @@
+.navbar-backgrounfImg{
+    background: url("../../../assets/img/header.png");
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    color: #ffff;
+}
+
+.navbar{
+    background-color: #fff !important;
+    box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
+}
+
+/* .navbar.navbar-absolute {
+    position: fixed;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 1029;
+} */
+
+/* .logo-nav{
+    width: 135px;
+    display: block;
+    max-height: 30px;
+    margin-left: 13px;
+    margin-right: 15px;
+} */

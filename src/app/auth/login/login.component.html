@@ -1,0 +1,61 @@
+<div class="container mg-lg">
+    <div class="row">
+        <div class="col-lg-5 col-md-6 col-sm-6 ml-auto mr-auto">
+            <h2 class="text-center text-blue capital">
+                <!-- <img src="./assets/img/logo.png" style="height:50%;width: 50%;"> -->
+            </h2>
+                   
+                <div class="card card-login">
+                    <div class="card-header card-header-blue text-center">
+                        <h4 class="card-title">Welcome, Please Log-in</h4>
+                    </div>
+                    
+                    <form [formGroup]="insertForm" (ngSubmit)="onSubmit()" >
+                    <div class="card-body">
+                        <br>
+                        
+                        <div class="input-group">
+                            <mat-form-field>
+                                <input matInput type="text" formControlName="Username" class="form-control"  aria-describedby="emailHelp" placeholder="Enter Username">
+                                <mat-icon matSuffix class="pointer">account_circle</mat-icon>
+                                
+                            </mat-form-field>
+                          </div>
+                          <div class="input-group">
+                            <mat-form-field>
+                                <input matInput [type]="hide ? 'password' : 'text'" formControlName="Password" class="form-control"  placeholder="Enter Password">
+                                <mat-icon class="pointer" mat-icon-button matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                               
+                            </mat-form-field>
+                            
+                          </div>
+                       
+                        <label class="mg-sm">
+                            Not a User?
+                            <a href="#" routerLink="register">Click Here to Register</a>.
+                        </label>
+                       
+                        <br>
+                        <label class="mg-sm">
+                            Forgot Password?
+                            <a href="#" routerLink="/forgot-password">Click Here</a>
+                        </label>
+                        <div class="mg-sm">
+                           
+                            <button class="btn btn-blue btn-block mb-3"  [disabled]="insertForm.invalid">
+                                Login
+                            </button>
+                        </div>
+                        <div class="row form-group">
+
+                        </div>
+                    </div>
+                    
+                    </form>
+                        
+                </div>
+            <!-- </form> -->
+
+        </div>
+    </div>
+</div>
